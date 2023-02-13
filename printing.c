@@ -10,7 +10,7 @@ TaskHandle_t myTask2Handle = NULL;
 
  while(1){  
 printf("hello from task 1 \n");
-  vTaskDelay(1000 / portTICK_RATE_MS);
+  vTaskDelay(1000 / portTICK_PERIOD_MS);
    vTaskDelay(pdMS_TO_TICKS(1000));
  }
 }
@@ -22,7 +22,7 @@ printf("hello from task 1 \n");
 
 printf("hello from task 2 \n");
     vTaskDelay(pdMS_TO_TICKS(1000));
-  vTaskDelay(1000 / portTICK_RATE_MS);
+  vTaskDelay(1000 / portTICK_PERIOD_MS);
  }
 }
 
